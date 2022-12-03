@@ -1,0 +1,2 @@
+## Practical task: ##
+All tasks are designed in such a way that they have a ```FIXME``` type (which is ```any```) and your goal will get rid of it. You can’t change the code except for types (in task 5 you can), you can’t change the original types either, but you can refactor them. For example ```type A = 1 | 2``` express as ```type A1 = 1; type A2 = 2; type A = A1 | A2;```
