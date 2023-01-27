@@ -1,7 +1,7 @@
 // There is a union (union) of order types in different states
 // You need to replace FIXME with a type that will get all possible states from Order (state)
 
-type FIXME = any
+type FIXME = "initial" | "inWork" | "buyingSupplies" | "producing" | "fullfilled"
 
 type Order =
     | {
