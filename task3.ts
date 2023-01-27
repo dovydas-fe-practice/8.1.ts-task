@@ -3,9 +3,7 @@
 
 // NOTE: in this task you able to modify code in place where you assign FIXME type
 
-type FIXME = any
-
-export const omit = <T extends Record<any, any>, K extends keyof T>(obj: T, keyToOmit: K): FIXME => {
+export const omit = <T extends Record<any, any>, K extends keyof T>(obj: T, keyToOmit: K): Omit<T, K> => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { [keyToOmit]: _, ...withoutKey } = obj
     return withoutKey
