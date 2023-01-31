@@ -3,7 +3,7 @@
 // A returns only initial and inWork
 // Need to replace FIXME with the correct type computed based on Order
 
-type FIXME = Extract<Order, { state: 'initial' } | {state: 'inWork'}> | null
+type FIXME = Extract<Order, { state: 'initial' | 'inWork' }> | null
 
 type Order =
     | {
